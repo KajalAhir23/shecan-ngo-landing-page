@@ -1453,13 +1453,6 @@ body.dark-theme .info-icon {
     padding: 0 4px;
 }
 
-/* Dark mode label color for better contrast */
-    background-color: var(--bg-light);
-    color: var(--text-main);
-    background-color: var(--card-bg);
-    padding: 0 4px;
-}
-
 .form-textarea ~ .form-label {
     top: 24px;
     transform: none;
@@ -2016,6 +2009,16 @@ body.dark-theme #back-to-top .arrow-icon {
 
 /* Large Tablets & Small Desktops (< 1024px) */
 @media (max-width: 1024px) {
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 0 20px;
+    }
+
+    .nav-actions {
+        gap: 16px;
+    }
+
     .hero-title {
         font-size: 2.8rem;
     }
@@ -2055,16 +2058,20 @@ body.dark-theme #back-to-top .arrow-icon {
 
 /* Small Tablets & Mobile Devices (< 768px) */
 @media (max-width: 768px) {
-    /* Mobile Navigation menu drawer */
-    .hamburger {
-        display: flex;
+    .nav-container {
+        padding: 0 18px;
     }
-    
+
+    .nav-actions {
+        gap: 12px;
+        align-items: center;
+    }
+
     .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 280px;
+        width: min(320px, 100%);
         height: 100vh;
         background-color: var(--card-bg);
         border-left: 1px solid var(--border-color);
@@ -2072,18 +2079,34 @@ body.dark-theme #back-to-top .arrow-icon {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        gap: 22px;
         z-index: 1000;
         transition: right var(--transition-normal);
         backdrop-filter: blur(10px);
+        padding: 0 24px;
     }
     
     .nav-menu.active {
         right: 0;
     }
     
+    .nav-item {
+        font-size: 1.05rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
     .btn-nav-cta {
         display: none; /* Hide donate button inside navigation bar on mobile */
+    }
+    
+    .hamburger {
+        display: flex;
     }
     
     .navbar {
@@ -2104,11 +2127,13 @@ body.dark-theme #back-to-top .arrow-icon {
     .hero-container {
         grid-template-columns: 1fr;
         gap: 40px;
+        padding: 0 12px;
     }
     
     .hero-description {
         margin-left: auto;
         margin-right: auto;
+        max-width: 100%;
     }
     
     .hero-buttons {
@@ -2117,7 +2142,7 @@ body.dark-theme #back-to-top .arrow-icon {
     
     .hero-image-wrapper {
         margin-top: 20px;
-        max-width: 400px;
+        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -2152,6 +2177,35 @@ body.dark-theme #back-to-top .arrow-icon {
         font-size: 2.2rem;
     }
     
+    .contact-container {
+        padding: 0 12px;
+    }
+    
+    .about-container,
+    .mission-card,
+    .testimonial-card,
+    .gallery-item,
+    .contact-form-card,
+    .modal-card {
+        width: 100%;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-btn {
+        position: static;
+        width: 100%;
+        margin-top: 14px;
+        right: auto;
+        top: auto;
+    }
+    
     /* Lightbox buttons resize */
     .lightbox-prev-btn, .lightbox-next-btn {
         width: 44px;
@@ -2180,6 +2234,10 @@ body.dark-theme #back-to-top .arrow-icon {
         font-size: 2.2rem;
     }
     
+    .hero-description {
+        font-size: 1rem;
+    }
+    
     .section-heading {
         font-size: 1.8rem;
     }
@@ -2201,5 +2259,25 @@ body.dark-theme #back-to-top .arrow-icon {
     
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .navbar {
+        padding: 12px 0;
+    }
+    
+    .nav-container {
+        padding: 0 14px;
+    }
+    
+    .nav-item {
+        font-size: 0.95rem;
+    }
+    
+    .footer-links ul {
+        gap: 10px;
+    }
+    
+    .newsletter-form {
+        gap: 12px;
     }
 }
