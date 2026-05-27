@@ -47,4 +47,5 @@ The website is fully responsive and works smoothly on:
 - LinkedIn: https://www.linkedin.com/company/shecanfoundation
 
 ## 🚀 Live Demo
+- Demo: https://shecanfoundation-croquembouche-096831.netlify.app/
 
