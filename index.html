@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation | Empowering Women, Transforming Futures</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="She Can Foundation is a non-governmental organization dedicated to empowering women through education, skills training, community support, and leadership.">
+    <meta name="keywords"
+        content="women empowerment, NGO, education, skill development, community support, volunteer, She Can Foundation">
+    <meta name="author" content="She Can Foundation">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="She Can Foundation | Empowering Women">
+    <meta property="og:description"
+        content="Dedicated to empowering women through education, skill development, and community support. Join our movement today.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="preloader-content">
+            <svg class="preloader-logo" viewBox="0 0 100 100">
+                <path d="M50 15 C35 15, 20 30, 20 50 C20 70, 35 85, 50 85 C65 85, 80 70, 80 50 C80 30, 65 15, 50 15 Z"
+                    fill="none" stroke="url(#logo-grad)" stroke-width="6" stroke-dasharray="300"
+                    stroke-dashoffset="300"></path>
+                <path d="M50 30 C40 30, 32 38, 32 48 C32 60, 50 78, 50 78 C50 78, 68 60, 68 48 C68 38, 60 30, 50 30 Z"
+                    fill="url(#logo-grad)"></path>
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ff4f81" />
+                        <stop offset="100%" stop-color="#7b2cbf" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="preloader-text">She Can Foundation</div>
+            <div class="preloader-bar">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- 3. Header & Navigation -->
+    <header class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <div class="navbar-brand-wrapper">
+                <a href="#home" class="navbar-brand">She Can Foundation</a>
+                <button class="like-btn" aria-label="Like"><i class="fa-solid fa-heart"></i></button>
+            </div>
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#mission" class="nav-item">Mission</a>
+                <a href="#volunteer" class="nav-item">Volunteer</a>
+                <a href="#testimonials" class="nav-item">Stories</a>
+                <a href="#gallery" class="nav-item">Gallery</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Mode Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+
+                <!-- CTA Button -->
+                <a href="#volunteer" class="btn btn-nav-cta">Donate</a>
+
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger" id="nav-hamburger" aria-label="Open mobile navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 4. Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Floating abstract shapes -->
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <span class="hero-tagline"><i class="fa-solid fa-sparkles text-pink"></i> Building a Better
+                    Tomorrow</span>
+                <h1 class="hero-title">Empowering Women, <br><span class="gradient-text text-glow">Transforming
+                        Futures</span></h1>
+                <p class="hero-description">
+                    She Can Foundation is a dedicated non-governmental organization helping women thrive through
+                    comprehensive education, vocational training, community awareness, and life-changing opportunities.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#volunteer" class="btn btn-primary" id="hero-btn-join">Join Us <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#about" class="btn btn-secondary" id="hero-btn-learn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper reveal">
+                <div class="image-bg-glow"></div>
+                <img src="assets/image-3.png" alt="Hero Image" class="hero-img" id="hero-main-img">
+                <div class="floating-card hero-badge-1">
+                    <span class="badge-icon"><i class="fa-solid fa-ribbon"></i></span>
+                    <div class="badge-details">
+                        <h4>100% Free</h4>
+                        <p>Education & Support</p>
+                    </div>
+                </div>
+                <div class="floating-card hero-badge-2">
+                    <span class="badge-icon"><i class="fa-solid fa-globe"></i></span>
+                    <div class="badge-details">
+                        <h4>Active in</h4>
+                        <p>15+ Districts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curved Bottom Divider -->
+        <div class="section-divider">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path
+                    d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z"
+                    fill="var(--bg-light)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- 5. About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image-wrapper reveal">
+                <div class="about-glow"></div>
+                <img src="assets/image-4.png" alt="About She Can Foundation" class="about-img" id="about-main-img">
+                <!-- Overlay badges showing accomplishments -->
+                <div class="about-overlay-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Skill Center</span>
+                </div>
+            </div>
+
+            <div class="about-content reveal">
+                <span class="section-subheading">Who We Are</span>
+                <h2 class="section-heading">About She Can Foundation</h2>
+                <div class="heading-border"></div>
+                <p class="about-paragraph">
+                    She Can Foundation is a non-governmental organization dedicated to empowering women through
+                    education, awareness, skill development, and community support. The foundation believes every woman
+                    deserves equal opportunities to grow, lead, and succeed.
+                </p>
+                <p class="about-paragraph">
+                    By providing safe spaces, mentoring, professional training, and basic resource aid, we create
+                    pathways for women of all backgrounds to stand on their own feet and elevate their communities.
+                </p>
+
+                <!-- Statistics Row -->
+                <div class="stats-grid" id="stats-counter-section">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Volunteers</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-person-breastfeeding"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="1000">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Women Supported</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <p class="stat-label">Campaigns</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Mission Section -->
+    <section id="mission" class="mission-section">
+        <div class="mission-header reveal">
+            <span class="section-subheading text-center">Our Core Pillars</span>
+            <h2 class="section-heading text-center">Our Mission & Values</h2>
+            <div class="heading-border center"></div>
+            <p class="section-description text-center">
+                We believe in a holistic model of empowerment that covers educational foundations, leadership guidance,
+                and structural community reinforcement.
+            </p>
+        </div>
+
+        <div class="mission-grid container">
+            <!-- Card 1 -->
+            <div class="mission-card reveal">
+                <div class="card-bg-gradient"></div>
+                <div class="mission-icon">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <h3 class="mission-title">Education</h3>
+                <p class="mission-description-text">
+                    Providing access to basic literacy, school sponsorships, scholarship guidelines, and advanced coding
+                    or business classes to level the academic playing field.
+                </p>
+                <a href="#about" class="mission-learn-more">Learn details <i
+                        class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="mission-card reveal">
+                <div class="card-bg-gradient"></div>
+                <div class="mission-icon">
+                    <i class="fa-solid fa-venus"></i>
+                </div>
+                <h3 class="mission-title">Women Empowerment</h3>
+                <p class="mission-description-text">
+                    Fostering independence through confidence building, legal rights literacy, leadership programs,
+                    entrepreneurship funding, and active career mentorship.
+                </p>
+                <a href="#about" class="mission-learn-more">Learn details <i
+                        class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="mission-card reveal">
+                <div class="card-bg-gradient"></div>
+                <div class="mission-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="mission-title">Community Support</h3>
+                <p class="mission-description-text">
+                    Building supportive community environments, mental health counseling circles, safe temporary
+                    shelters, and distributing basic care toolkits for health.
+                </p>
+                <a href="#about" class="mission-learn-more">Learn details <i
+                        class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Volunteer / Join Us Section -->
+    <section id="volunteer" class="volunteer-section">
+        <div class="volunteer-shape-1"></div>
+        <div class="volunteer-shape-2"></div>
+
+        <div class="volunteer-container reveal">
+            <span class="volunteer-tag">Make A Difference</span>
+            <h2 class="volunteer-heading">Become a Volunteer Today</h2>
+            <p class="volunteer-description">
+                Your time, knowledge, and compassion can completely reshape a woman's life. Join our worldwide network
+                of volunteers and start teaching, mentoring, or leading campaigns.
+            </p>
+            <button class="btn btn-primary btn-pulse btn-lg" id="join-movement-btn">Join The Movement</button>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-header reveal">
+            <span class="section-subheading text-center">Real Impact</span>
+            <h2 class="section-heading text-center">Stories of Transformation</h2>
+            <div class="heading-border center"></div>
+            <p class="section-description text-center">
+                Hear directly from our volunteers and the incredible women who have rebuilt their paths with us.
+            </p>
+        </div>
+
+        <div class="testimonials-grid container">
+            <!-- Card 1 -->
+            <div class="testimonial-card reveal">
+                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                <p class="testimonial-text">
+                    "This foundation inspired me to grow with confidence and support others. The mentoring classes
+                    completely changed my career perspective."
+                </p>
+                <div class="testimonial-user">
+                    <div class="user-info">
+                        <span class="user-role">Program Alumna</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card reveal">
+                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                <p class="testimonial-text">
+                    "Volunteering at She Can Foundation is incredibly rewarding. Seeing the immediate spark of hope in
+                    our students' eyes is a feeling like no other."
+                </p>
+                <div class="testimonial-user">
+                    <div class="user-info">
+                        <span class="user-role">Lead Tech Mentor</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card reveal">
+                <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
+                <p class="testimonial-text">
+                    "From local workshops to national networks, they provide an unmatched safety net and resources.
+                    Every girl deserves this support system."
+                </p>
+                <div class="testimonial-user">
+                    <div class="user-info">
+                        <span class="user-role">Community Organizer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="gallery-header reveal">
+            <span class="section-subheading text-center">Visual Memories</span>
+            <h2 class="section-heading text-center">Our Gallery</h2>
+            <div class="heading-border center"></div>
+            <p class="section-description text-center">
+                Explore moments of joy, education, skill-building, and solidarity from our latest events.
+            </p>
+        </div>
+
+        <div class="gallery-grid container reveal">
+            <!-- Item 1 – Real foundation photo: outdoor teaching session -->
+            <div class="gallery-item" data-index="0"
+                data-caption="She Can Foundation volunteers conducting an outdoor education session with underprivileged children.">
+                <img src="assets/image-2.png" alt="Outdoor Teaching Session" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <h4>Field Teaching</h4>
+                        <p>Outdoor Education Drive</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 – Real foundation photo: volunteer with children -->
+            <div class="gallery-item" data-index="1"
+                data-caption="A She Can Foundation volunteer engaging with children from the community during a learning session.">
+                <img src="assets/image.png" alt="Volunteer with Children" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <h4>Community Outreach</h4>
+                        <p>Children's Learning Drive</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 – Real foundation photo: child beneficiary -->
+            <div class="gallery-item" data-index="2"
+                data-caption="A young beneficiary of the She Can Foundation's community nutrition and education program.">
+                <img src="assets/image-1.png" alt="Child Beneficiary" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <h4>Smiles of Hope</h4>
+                        <p>Child Welfare Program</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 – Skill Development Workshops -->
+            <div class="gallery-item" data-index="3"
+                data-caption="Practical business workshop showing women how to budget and build startups.">
+                <img src="assets/image-3.png" alt="Skill Development Workshops" class="gallery-img">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        <h4>Workshops</h4>
+                        <p>Vocational Skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 10. Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-header reveal">
+            <span class="section-subheading text-center">Get in Touch</span>
+            <h2 class="section-heading text-center">Contact Us</h2>
+            <div class="heading-border center"></div>
+            <p class="section-description text-center">
+                Have questions about our programs, partnership opportunities, or how you can volunteer? Drop us a line!
+            </p>
+        </div>
+
+        <div class="contact-container container">
+            <!-- Contact Details -->
+            <div class="contact-info reveal">
+                <h3 class="contact-info-title">Let's start a conversation</h3>
+                <p class="contact-info-subtitle">Feel free to reach out via email, phone, or visit our headquarters.</p>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:president@shecanfoundation.org">president@shecanfoundation.org</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="info-text">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+91- 8283841830">+91- 8283841830</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links-wrapper">
+                    <h4>Follow Our Journey</h4>
+                    <div class="social-links">
+                        <a href="https://whatsapp.com/channel/0029Vb6aI3k5fM5ShePPks3z/102" class="social-link"
+                            aria-label="WhatsApp Channel"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/shecanfoundation" class="social-link"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-card reveal">
+                <form id="ngo-contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="contact-name" class="form-input" placeholder=" " required>
+                        <label for="contact-name" class="form-label">Full Name</label>
+                        <span class="error-msg">Please enter your name.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="contact-email" class="form-input" placeholder=" " required>
+                        <label for="contact-email" class="form-label">Email Address</label>
+                        <span class="error-msg">Please enter a valid email.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="contact-message" class="form-input form-textarea" placeholder=" "
+                            required></textarea>
+                        <label for="contact-message" class="form-label">Your Message</label>
+                        <span class="error-msg">Please enter your message.</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                        <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                    <div class="form-success-alert" id="form-success-banner">
+                        <i class="fa-solid fa-circle-check"></i> Message sent successfully! We will get back to you
+                        shortly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Footer -->
+    <footer class="main-footer">
+        <div class="footer-top container">
+            <div class="footer-brand">
+                <a href="#home" class="navbar-brand">She Can Foundation</a>
+                <p class="footer-desc">
+                    Fostering positive change, equity, and resources for women worldwide. Building independent futures,
+                    one community at a time.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://whatsapp.com/channel/0029Vb6aI3k5fM5ShePPks3z/102" aria-label="WhatsApp Channel"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/company/shecanfoundation" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/shecanfoundation" aria-label="Twitter"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About NGO</a></li>
+                    <li><a href="#mission">Our Mission</a></li>
+                    <li><a href="#volunteer">Volunteer Portal</a></li>
+                    <li><a href="#contact">Contact Details</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#mission">Coding & Tech</a></li>
+                    <li><a href="#mission">Business Funding</a></li>
+                    <li><a href="#mission">Counseling Circles</a></li>
+                    <li><a href="#mission">Rights Literacy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Stay updated with our latest campaigns, reports, and impact stories.</p>
+                <form class="newsletter-form" id="newsletter-email-form">
+                    <input type="email" placeholder="Your Email Address" required class="newsletter-input"
+                        aria-label="Email for newsletter">
+                    <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i
+                            class="fa-solid fa-envelope-open-text"></i></button>
+                </form>
+                <div class="newsletter-success" id="newsletter-success-msg">Subscribed successfully!</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright">&copy; 2026 She Can Foundation. All rights reserved. Registered non-profit
+                    organization.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+        <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <span class="arrow-icon"><i class="fa-solid fa-arrow-up"></i></span>
+    </button>
+
+    <!-- Custom Lightbox Modal -->
+    <dialog class="lightbox-modal" id="gallery-lightbox">
+        <form method="dialog" class="lightbox-close-form">
+            <button class="lightbox-close-btn" aria-label="Close lightbox"><i class="fa-solid fa-xmark"></i></button>
+        </form>
+        <div class="lightbox-content">
+            <button class="lightbox-prev-btn" aria-label="Previous image"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+            <div class="lightbox-image-container">
+                <img src="" alt="" class="lightbox-img" id="lightbox-active-img">
+                <p class="lightbox-caption" id="lightbox-active-caption"></p>
+            </div>
+            <button class="lightbox-next-btn" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </dialog>
+
+    <!-- Volunteer/Join Us Modal Dialog -->
+    <dialog class="volunteer-modal" id="join-modal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="close-join-modal" aria-label="Close modal"><i
+                    class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header">
+                <h3>Join The Movement</h3>
+                <p>Register to become an official volunteer at She Can Foundation.</p>
+            </div>
+            <form id="volunteer-registration-form" class="modal-form" novalidate>
+                <div class="form-group">
+                    <input type="text" id="vol-name" class="form-input" placeholder=" " required>
+                    <label for="vol-name" class="form-label">Full Name</label>
+                    <span class="error-msg">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="vol-email" class="form-input" placeholder=" " required>
+                    <label for="vol-email" class="form-label">Email Address</label>
+                    <span class="error-msg">Please enter a valid email.</span>
+                </div>
+
+                <div class="form-group">
+                    <select id="vol-interest" class="form-input select-input" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="education">Education & Literacy</option>
+                        <option value="mentoring">Career Mentoring</option>
+                        <option value="support">Community Support & Logistics</option>
+                        <option value="marketing">Social Media & Campaigning</option>
+                    </select>
+                    <label for="vol-interest" class="form-label">Interest Area</label>
+                    <span class="error-msg">Please select an interest area.</span>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="vol-message" class="form-input form-textarea" placeholder=" " required></textarea>
+                    <label for="vol-message" class="form-label">Why do you want to join us?</label>
+                    <span class="error-msg">Please share your motivation.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+
+                <div class="form-success-alert" id="vol-success-banner">
+                    <i class="fa-solid fa-circle-check"></i> Thank you! Your application has been submitted
+                    successfully.
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

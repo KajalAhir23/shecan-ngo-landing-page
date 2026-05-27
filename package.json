@@ -1,0 +1,12 @@
+{
+  "name": "she-can-foundation",
+  "version": "1.0.0",
+  "description": "She Can Foundation NGO Website",
+  "main": "index.js",
+  "author": "Kajal Bhatiya",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
