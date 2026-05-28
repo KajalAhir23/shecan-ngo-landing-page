@@ -1037,6 +1037,19 @@ body.dark-theme .mission-learn-more {
     position: relative;
     overflow: hidden;
     color: var(--text-main);
+}
+
+/* Volunteer Section Light Mode Text Fix */
+body:not(.dark-theme) .volunteer-section h2,
+body:not(.dark-theme) .volunteer-section .volunteer-heading {
+    color: #2d1a3a !important;
+}
+body:not(.dark-theme) .volunteer-section .volunteer-description {
+    color: #4b2a5a !important;
+}
+body:not(.dark-theme) .volunteer-section .volunteer-tag {
+    color: var(--primary-pink) !important;
+}
     text-align: center;
 }
 
